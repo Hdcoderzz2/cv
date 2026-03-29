@@ -246,15 +246,21 @@ dialog div.top_box{
     flex-flow: row;
 }
 dialog div.top_box button{
-    height: auto;
-    width: auto;
-    color: white;
+    height: fit-content;
+    width: 30px;
+    aspect-ratio: 2/1;
+    color: black;
     font-weight: bold;
+    padding: 3px;
+    border-radius: 5px;
+    align-self: center;
     font-size: 1.5em;
-    background-color: transparent;
+    background-color: white;
 }
 dialog div.top_box button:hover{
-    color: red;
+    background-color: red;
+    color: white;
+    
 }
 dialog div.top_box p{
     font-size: 1.6em;

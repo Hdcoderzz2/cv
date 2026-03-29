@@ -1,4 +1,4 @@
-@media screen and (max-width: 660px)  {
+@media screen and (max-width: 904px)  {
     div.pfp{
         transform-origin: center;
     }
@@ -6,55 +6,96 @@
         grid-template-columns: 40% 58%;
     }
     div#info{
-        font-size: 1.2em;
+        font-size: 1.3em;
     }
 }
-@media screen and (max-width: 490px)  {
+
+@media screen and (max-width: 660px)  {
+    @keyframes open_anim {
+    from{height: 0;width: 0;}
+    to{height: 90%;width: 99%;}
+    }   
     div.home{
-        grid-template-columns: 45% 53%;
-    }
-    div.pfp{
-        width:80%;
+        grid-template-columns: 40% 58%;
     }
     div#info{
         font-size: 1.2em;
     }
 }
-@media screen and (max-width: 490px)  {
+@media screen and (max-width: 640px)  {
+    /*div.home{
+        grid-template-columns: 45% 53%;
+    }*/
+    div.pfp{
+        margin-top: 30px;
+        width:65%;
+    }
     div#projects_container div.list_item{
         width: 92%;
     }
-    div.pfp{
-        margin-top: 20px;
-        width:75%;
-    }
-    div#info{
-        font-size: 1.05em;
-    }
 }
-@media screen and (max-width: 382px)  {
+@media screen and (max-width: 540px)  {
+    /*div.home{
+        grid-template-columns: 45% 53%;
+    }*/
     div.home{
         padding-left: 2px;
     }
     div.pfp{
-        margin-top: 30px;
-        width:70%;
-        justify-self:center;
+        width: 62%;
+        
+    }
+    div.social_bar{
+        transform: scale(0.9);
+    }
+    div#projects_container div.list_item{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 520px)  {
+    /*div.home{
+        grid-template-columns: 45% 53%;
+    }*/
+    dialog#credits ul{
+        font-size: 1em;
+    }
+    div.home{
+        padding-left: 5px;
+    }
+    div.pfp{
+       margin: auto;
+       width:75%;
+        
+    }
+    div.social_bar{
+        transform:scale(0.84);
+    }
+    div#projects_container div.list_item{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 450px)  {
+    /*div.home{
+        grid-template-columns: 45% 53%;
+    }*/
+    dialog#credits ul{
+        font-size: 0.86em;
+    }
+    div.home{
+        padding-left: 5px;
+    }
+    div.pfp{
+       width:90%;
+        
+    }
+    div.social_bar{
+        justify-self: center;
+        width:80%
+    }
+    div#projects_container div.list_item{
+        width: 90%;
     }
     div#info{
         font-size: 1em;
-    }
-}
-@media screen and (max-width: 352px)  {
-    div.home{
-        padding-left: 0px;
-    }
-    div.pfp{
-        margin-top: 40px;
-        width:65%;
-        justify-self:center;
-    }
-    div#info{
-        font-size: 0.8em;
     }
 }
