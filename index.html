@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=code,dark_mode,home,mail,more_vert,sunny" />
+    <link rel="stylesheet" href="icon_style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="resp.css">
+    <link rel="icon" href="#">
+</head>
+<body class="bg" onload="on_load()">
+    <section id="main" class="light-mode">
+        <dialog id="credits" closed>
+            <div class="top_box">
+                <p>Credits</p>
+                <button onclick="dialog_close()">&times;</button>
+            </div><br>
+            <UL type="circle">
+                <LI><I>Made by HD</I></LI>
+                <LI>Image by <a href="https://pixabay.com/users/chiemseherin-1425977/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8095996">🌼Christel🌼</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8095996">Pixabay</a></LI>
+            </UL>
+        </dialog>
+        <div class="container home scroll_bar_noshow" id="home">
+            <div class="wraper">
+                <div class="pfp bg"></div>
+                <div class="social_bar light_mode_nav" id="social_bar">
+                    <p>Contact me: </p>
+                    <nav>
+                        <button title="gmail"><a href="mailto:#"><span class="material-symbols-outlined">mail</span></a></button>
+                    </nav>
+                </div>
+                
+            </div>
+            <div id="info" class="fl"></div>
+        </div>
+        <div id='projects' class="container scroll_bar_noshow lightmode_variant" style="display: none;">
+            <div id="project_top_box"><p>Projects</p></div>
+            <div id="projects_container">
+               
+            </div>
+            
+        </div>
+        <div id="dock"  class="dark-mode lightmode">
+            <button onclick="home()" class="special_btn" style="transform: scale(1.5);color:mediumseagreen;"><span class="material-symbols-outlined">home</span></button>
+            <button onclick="projects()" class="special_btn"><span class="material-symbols-outlined">code</span></button>
+            <button onclick="toggle_mode()"><span class="material-symbols-outlined" id="mode">dark_mode</span></button>
+            <button onclick="credits()"><span class="material-symbols-outlined">more_vert</span></button>
+        </div>
+    </section>
+    <script defer src="script.js"></script>
+</body>
+</html>
