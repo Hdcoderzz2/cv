@@ -182,9 +182,10 @@ div.pfp_container{
     height: 100%;
     width: 100%;
     padding: 1px;
-    align-self: center;
+    align-self: start;
+    padding-top: 0.7rem;
     justify-self: center;
-    align-items: center;
+    align-items: flex-start;
    justify-content: center;
     overflow: hidden;
 }
