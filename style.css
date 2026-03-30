@@ -102,6 +102,7 @@ dialog[open]{
     padding-left: 5px;
     padding-top: 2px;
     top:45%;
+    overflow:auto;
     padding-bottom: 6vh;
     height:fit-content;
     margin: auto;
