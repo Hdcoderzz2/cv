@@ -1,11 +1,22 @@
 
-
+function play_audio_cls() {
+    let audio=new Audio('assets/audio/click.mp3');
+    audio.play();
+}
+function play_audio_btn(){
+    let audio=new Audio('assets/audio/click2.mp3');
+    audio.volume=0.8;
+    audio.play();
+}
 function toggle_mode(){
     let main=document.getElementById("main");
     let dock=document.getElementById("dock");
     let classList=main.classList;
     let project=document.getElementById("projects");
     let sb=document.getElementById("social_bar");
+    let audio=new Audio('assets/audio/click3.mp3');
+    audio.volume=0.50;
+    audio.play();
     if(Array.from(classList).includes('light-mode')){
         main.classList.remove('light-mode');
         dock.classList.remove('dark-mode','lightmode');
@@ -56,6 +67,7 @@ function opening_anim(id,desired_display="block",id2="",timer=450){
             target_elem.style.display="none";
         }
         setTimeout(()=>{
+           
             main_elem.classList.add("scroll_bar_show");
             main_elem.classList.remove("scroll_bar_noshow");
             main_elem.querySelectorAll("*").forEach((e)=>{
@@ -64,13 +76,16 @@ function opening_anim(id,desired_display="block",id2="",timer=450){
     },100);
 }
 function home(){
+    play_audio_btn();
     opening_anim('home','grid','projects');
 }
 function projects(){
+    play_audio_btn();
     opening_anim('projects','block','home');
   //  set_offset();
 }
 function credits(){
+    play_audio_btn();
     document.getElementById("credits").show();
     setTimeout(() => {
         document.getElementById("credits").classList.add("open");
@@ -80,7 +95,8 @@ function dialog_close(){
     let e=document.getElementById("credits");
     e.classList.remove("open");
     e.classList.add("fade-anim");
-    void e.offsetWidth;
+    play_audio_cls();
+    //void e.offsetWidth;
     setTimeout(()=>{
        e.close();
        e.classList.remove("fade-anim");

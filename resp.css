@@ -1,101 +1,71 @@
-@media screen and (max-width: 904px)  {
-    div.pfp{
-        transform-origin: center;
-    }
-    div.home{
-        grid-template-columns: 40% 58%;
-    }
-    div#info{
-        font-size: 1.3em;
-    }
-}
-
-@media screen and (max-width: 660px)  {
-    @keyframes open_anim {
-    from{height: 0;width: 0;}
-    to{height: 90%;width: 99%;}
-    }   
-    div.home{
-        grid-template-columns: 40% 58%;
-    }
-    div#info{
-        font-size: 1.2em;
-    }
-}
-@media screen and (max-width: 640px)  {
-    /*div.home{
-        grid-template-columns: 45% 53%;
-    }*/
-    div.pfp{
-        margin-top: 30px;
-        width:65%;
-    }
+/*width management*/
+@media screen and (max-width: 780px)  {
     div#projects_container div.list_item{
-        width: 92%;
+        width: 95%;
     }
 }
-@media screen and (max-width: 540px)  {
-    /*div.home{
-        grid-template-columns: 45% 53%;
-    }*/
-    div.home{
-        padding-left: 2px;
-    }
-    div.pfp{
-        width: 62%;
-        
+@media screen and (max-width: 600px)  {
+    dialog div.top_box button{
+        width:25px;
+        font-size: 1.3em;
     }
     div.social_bar{
         transform: scale(0.9);
     }
-    div#projects_container div.list_item{
-        width: 90%;
+    .material-symbols-outlined{
+        font-size: 2em;
     }
 }
-@media screen and (max-width: 520px)  {
-    /*div.home{
-        grid-template-columns: 45% 53%;
-    }*/
-    dialog#credits ul{
-        font-size: 1em;
-    }
-    div.home{
-        padding-left: 5px;
+@media screen and (max-width: 550px)  {
+    div#projects_container div.list_item{
+        width: 93%;
     }
     div.pfp{
-       margin: auto;
-       width:75%;
-        
+        width:80%;
     }
-    div.social_bar{
-        transform:scale(0.84);
-    }
-    div#projects_container div.list_item{
-        width: 90%;
+    div#info{
+        font-size: 1.1em;
     }
 }
 @media screen and (max-width: 450px)  {
-    /*div.home{
-        grid-template-columns: 45% 53%;
-    }*/
-    dialog#credits ul{
-        font-size: 0.86em;
-    }
-    div.home{
-        padding-left: 5px;
+    dialog div.top_box button{
+        width:23px;
+        font-size: 1.12em;
     }
     div.pfp{
-       width:90%;
-        
+        width:84%;
     }
-    div.social_bar{
-        justify-self: center;
-        width:80%
+    div#info{
+        font-size: 1.05em;
     }
+    .material-symbols-outlined{
+        font-size: 1.9em;
+    }
+     div.social_bar{
+        transform: scale(0.88);
+    }
+    div.social_bar p{
+        font-size: 1.05em;
+    }
+}
+@media screen and (max-width: 365px)  {
     div#projects_container div.list_item{
-        width: 90%;
+        width: 92%;
+    }
+    div.pfp{
+        width:90%;
     }
     div#info{
         font-size: 1em;
+    }
+    .material-symbols-outlined{
+        font-size: 1.6em;
+    }
+     div.social_bar{
+        transform: scale(0.85);
+        width: 100%;
+    }
+    div.social_bar p{
+        font-size: 0.97em;
     }
 }
